@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BMW M4 Competition (G82) — Pure Performance</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;600;700;800;900&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ═══════════════════ NAV ═══════════════════ -->
+  <nav id="navbar">
+    <div class="nav-logo">
+      <div class="bmw-roundel">
+        <div class="roundel-inner">
+          <span class="roundel-b">B</span><span class="roundel-m">M</span><span class="roundel-w">W</span>
+        </div>
+      </div>
+      <span class="nav-brand">M4 Competition</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#showcase">Showcase</a></li>
+      <li><a href="#specs">Performance</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#interior">Interior</a></li>
+      <li><a href="#timeline">Heritage</a></li>
+    </ul>
+    <button class="nav-cta">Configure</button>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ═══════════════════ HERO ═══════════════════ -->
+  <section id="hero">
+    <div class="hero-bg" id="heroBg">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/2021_BMW_M4_Competition_Automatic_3.0.jpg/1200px-2021_BMW_M4_Competition_Automatic_3.0.jpg"
+        alt="BMW M4 Competition G82"
+        class="hero-img"
+        id="heroImg"
+      />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge fade-up" data-delay="0">M Performance</div>
+      <h1 class="hero-title fade-up" data-delay="200">
+        <span class="title-line">THE NEW</span>
+        <span class="title-line accent">M4</span>
+        <span class="title-line">COMPETITION</span>
+      </h1>
+      <p class="hero-sub fade-up" data-delay="500">Pure Performance Engineering</p>
+      <div class="hero-actions fade-up" data-delay="700">
+        <a href="#showcase" class="btn-primary ripple">Discover Now</a>
+        <a href="#specs" class="btn-ghost">View Specs →</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span class="scroll-text">SCROLL</span>
+      <div class="scroll-line"></div>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat fade-up" data-delay="900">
+        <span class="stat-val">503</span>
+        <span class="stat-label">HP</span>
+      </div>
+      <div class="hero-stat fade-up" data-delay="1000">
+        <span class="stat-val">3.8<small>s</small></span>
+        <span class="stat-label">0–100 km/h</span>
+      </div>
+      <div class="hero-stat fade-up" data-delay="1100">
+        <span class="stat-val">290</span>
+        <span class="stat-label">km/h max</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ SHOWCASE ═══════════════════ -->
+  <section id="showcase" class="section">
+    <div class="section-header reveal">
+      <span class="section-label">01 — Showcase</span>
+      <h2>The Ultimate<br /><em>Track Machine</em></h2>
+    </div>
+
+    <div class="showcase-stage">
+      <div class="showcase-slider" id="showcaseSlider">
+        <div class="slide active">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/2021_BMW_M4_Competition_Automatic_3.0_Front.jpg/1200px-2021_BMW_M4_Competition_Automatic_3.0_Front.jpg"
+            alt="BMW M4 Front"
+            loading="lazy"
+          />
+          <div class="slide-caption"><span>Front Fascia</span> — Iconic Kidney Grille</div>
+        </div>
+        <div class="slide">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/2021_BMW_M4_Competition_Auto_%2867442%29.jpg/1200px-2021_BMW_M4_Competition_Auto_%2867442%29.jpg"
+            alt="BMW M4 Side"
+            loading="lazy"
+          />
+          <div class="slide-caption"><span>Dynamic Profile</span> — Sculpted Aggression</div>
+        </div>
+        <div class="slide">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/2021_BMW_M4_Competition_Automatic_3.0_Rear.jpg/1200px-2021_BMW_M4_Competition_Automatic_3.0_Rear.jpg"
+            alt="BMW M4 Rear"
+            loading="lazy"
+          />
+          <div class="slide-caption"><span>Rear Diffuser</span> — Active Aerodynamics</div>
+        </div>
+        <div class="slide">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/2021_BMW_M4_Competition_1.jpg/1200px-2021_BMW_M4_Competition_1.jpg"
+            alt="BMW M4 Competition"
+            loading="lazy"
+          />
+          <div class="slide-caption"><span>Full View</span> — Competition Spec</div>
+        </div>
+      </div>
+
+      <button class="slide-btn prev" id="slidePrev">&#8592;</button>
+      <button class="slide-btn next" id="slideNext">&#8594;</button>
+      <div class="slide-dots" id="slideDots"></div>
+    </div>
+
+    <!-- Color Selector -->
+    <div class="color-selector reveal">
+      <p class="color-label">SELECT COLOR</p>
+      <div class="color-swatches">
+        <button class="swatch active" data-color="#f0f0f0" data-name="Alpine White" style="background:#f0f0f0;"></button>
+        <button class="swatch" data-color="#5a5f63" data-name="Brooklyn Grey" style="background:#5a5f63;"></button>
+        <button class="swatch" data-color="#f0c932" data-name="São Paulo Yellow" style="background:#f0c932;"></button>
+        <button class="swatch" data-color="#0a0a12" data-name="Black Sapphire" style="background:#0a0a12;border:1px solid #333;"></button>
+      </div>
+      <span class="color-name" id="colorName">Alpine White</span>
+      <div class="color-bar" id="colorBar" style="background:#f0f0f0;"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ SPECS ═══════════════════ -->
+  <section id="specs" class="section section-dark">
+    <div class="section-header reveal">
+      <span class="section-label">02 — Performance</span>
+      <h2>Engineered<br /><em>Without Compromise</em></h2>
+    </div>
+
+    <div class="specs-grid">
+      <div class="spec-card reveal" data-delay="0">
+        <div class="spec-icon">⚙️</div>
+        <div class="spec-content">
+          <span class="spec-label">ENGINE</span>
+          <span class="spec-value">3.0L Twin Turbo<br />Inline-6</span>
+        </div>
+      </div>
+      <div class="spec-card reveal" data-delay="100">
+        <div class="spec-icon">🔥</div>
+        <div class="spec-content">
+          <span class="spec-label">POWER</span>
+          <div class="counter-wrap">
+            <span class="spec-counter" data-target="503" data-suffix=" hp">0</span>
+          </div>
+        </div>
+      </div>
+      <div class="spec-card reveal" data-delay="200">
+        <div class="spec-icon">⚡</div>
+        <div class="spec-content">
+          <span class="spec-label">TORQUE</span>
+          <div class="counter-wrap">
+            <span class="spec-counter" data-target="650" data-suffix=" Nm">0</span>
+          </div>
+        </div>
+      </div>
+      <div class="spec-card reveal" data-delay="300">
+        <div class="spec-icon">⏱️</div>
+        <div class="spec-content">
+          <span class="spec-label">0–100 KM/H</span>
+          <div class="counter-wrap">
+            <span class="spec-counter" data-target="3.8" data-suffix="s" data-decimal="1">0</span>
+          </div>
+        </div>
+      </div>
+      <div class="spec-card reveal" data-delay="400">
+        <div class="spec-icon">🏁</div>
+        <div class="spec-content">
+          <span class="spec-label">TOP SPEED</span>
+          <div class="counter-wrap">
+            <span class="spec-counter" data-target="290" data-suffix=" km/h">0</span>
+          </div>
+        </div>
+      </div>
+      <div class="spec-card reveal" data-delay="500">
+        <div class="spec-icon">🔧</div>
+        <div class="spec-content">
+          <span class="spec-label">GEARBOX</span>
+          <span class="spec-value">M Steptronic<br />8-Speed</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="specs-img reveal">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/2021_BMW_M4_Competition_M_xDrive_Auto.jpg/1200px-2021_BMW_M4_Competition_M_xDrive_Auto.jpg"
+        alt="BMW M4 Competition xDrive"
+        loading="lazy"
+      />
+      <div class="specs-img-overlay">
+        <span class="specs-badge">M xDrive AWD</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ DRIVING EXPERIENCE ═══════════════════ -->
+  <section id="experience" class="section">
+    <div class="section-header reveal">
+      <span class="section-label">03 — Driving Experience</span>
+      <h2>Feel Every<br /><em>Corner</em></h2>
+    </div>
+
+    <div class="exp-grid">
+      <div class="exp-card reveal" data-delay="0">
+        <div class="exp-card-glow"></div>
+        <div class="exp-icon-wrap">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24 4C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm0 36c-8.84 0-16-7.16-16-16S15.16 8 24 8s16 7.16 16 16-7.16 16-16 16z" fill="#1c69d4"/>
+            <path d="M24 12v12l8 4" stroke="#1c69d4" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3>Adaptive M Suspension</h3>
+        <p>Electronically controlled dampers adapt in milliseconds for razor-sharp cornering or supreme comfort.</p>
+      </div>
+      <div class="exp-card reveal" data-delay="150">
+        <div class="exp-card-glow"></div>
+        <div class="exp-icon-wrap">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="24" cy="24" r="18" stroke="#1c69d4" stroke-width="2.5"/>
+            <path d="M12 24h24M24 12v24" stroke="#1c69d4" stroke-width="2.5" stroke-linecap="round"/>
+            <circle cx="24" cy="24" r="5" fill="#1c69d4"/>
+          </svg>
+        </div>
+        <h3>M xDrive AWD</h3>
+        <p>Intelligent all-wheel drive with rear-biased torque distribution for unparalleled launch grip.</p>
+      </div>
+      <div class="exp-card reveal" data-delay="300">
+        <div class="exp-card-glow"></div>
+        <div class="exp-icon-wrap">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 40L24 8l16 32H8z" stroke="#1c69d4" stroke-width="2.5" stroke-linejoin="round"/>
+            <path d="M16 40v-8h16v8" stroke="#1c69d4" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3>Carbon Fibre Roof</h3>
+        <p>CFRP roof panel lowers centre of gravity while saving crucial weight for enhanced dynamics.</p>
+      </div>
+      <div class="exp-card reveal" data-delay="450">
+        <div class="exp-card-glow"></div>
+        <div class="exp-icon-wrap">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 38c4-8 8-12 14-12s10 4 14 12" stroke="#1c69d4" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M24 26V10" stroke="#1c69d4" stroke-width="2.5" stroke-linecap="round"/>
+            <circle cx="24" cy="8" r="3" fill="#1c69d4"/>
+          </svg>
+        </div>
+        <h3>Active Exhaust System</h3>
+        <p>Electronically controlled flaps unleash a thunderous S58 engine soundtrack on demand.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ GALLERY ═══════════════════ -->
+  <section id="gallery" class="section section-dark">
+    <div class="section-header reveal">
+      <span class="section-label">04 — Gallery</span>
+      <h2>Raw<br /><em>Beauty</em></h2>
+    </div>
+
+    <div class="gallery-grid" id="galleryGrid">
+      <div class="gallery-item reveal" data-delay="0">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/2021_BMW_M4_Competition_Automatic_3.0_Front.jpg/800px-2021_BMW_M4_Competition_Automatic_3.0_Front.jpg"
+          alt="BMW M4 Front"
+          loading="lazy"
+        />
+        <div class="gallery-overlay"><span>Front View</span></div>
+      </div>
+      <div class="gallery-item large reveal" data-delay="100">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/2021_BMW_M4_Competition_Auto_%2867442%29.jpg/1200px-2021_BMW_M4_Competition_Auto_%2867442%29.jpg"
+          alt="BMW M4 Side"
+          loading="lazy"
+        />
+        <div class="gallery-overlay"><span>Dynamic Profile</span></div>
+      </div>
+      <div class="gallery-item reveal" data-delay="200">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/2021_BMW_M4_Competition_Automatic_3.0_Rear.jpg/800px-2021_BMW_M4_Competition_Automatic_3.0_Rear.jpg"
+          alt="BMW M4 Rear"
+          loading="lazy"
+        />
+        <div class="gallery-overlay"><span>Rear View</span></div>
+      </div>
+      <div class="gallery-item reveal" data-delay="150">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/2021_BMW_M4_Competition_Coup%C3%A9.jpg/800px-2021_BMW_M4_Competition_Coup%C3%A9.jpg"
+          alt="BMW M4 Coupe"
+          loading="lazy"
+        />
+        <div class="gallery-overlay"><span>Competition Coupé</span></div>
+      </div>
+      <div class="gallery-item reveal" data-delay="250">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/2021_BMW_M4_Competition_1.jpg/800px-2021_BMW_M4_Competition_1.jpg"
+          alt="BMW M4"
+          loading="lazy"
+        />
+        <div class="gallery-overlay"><span>Track Ready</span></div>
+      </div>
+      <div class="gallery-item large reveal" data-delay="350">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/2021_BMW_M4_Competition_Auto_%2858255%29.jpg/1200px-2021_BMW_M4_Competition_Auto_%2858255%29.jpg"
+          alt="BMW M4 at speed"
+          loading="lazy"
+        />
+        <div class="gallery-overlay"><span>In Motion</span></div>
+      </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+      <button class="lightbox-close" id="lightboxClose">✕</button>
+      <button class="lightbox-prev" id="lightboxPrev">&#8592;</button>
+      <button class="lightbox-next" id="lightboxNext">&#8594;</button>
+      <img src="" alt="" id="lightboxImg" />
+      <p class="lightbox-caption" id="lightboxCaption"></p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ INTERIOR ═══════════════════ -->
+  <section id="interior" class="section">
+    <div class="section-header reveal">
+      <span class="section-label">05 — Interior</span>
+      <h2>Driver-Focused<br /><em>Cockpit</em></h2>
+    </div>
+
+    <div class="interior-layout">
+      <div class="interior-img-wrap reveal">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/BMW_G82_M4_Competition_Extended_Merino_Leather_Kyalami_Orange_Black_%282%29.jpg/1200px-BMW_G82_M4_Competition_Extended_Merino_Leather_Kyalami_Orange_Black_%282%29.jpg"
+          alt="BMW M4 Interior"
+          loading="lazy"
+          class="interior-img"
+        />
+        <div class="hotspot" style="top:38%;left:20%;" data-tip="M Steering Wheel with Drive Mode Selector">
+          <div class="hotspot-dot"></div>
+          <div class="hotspot-tip">M Steering Wheel</div>
+        </div>
+        <div class="hotspot" style="top:25%;left:55%;" data-tip="12.3″ BMW Live Cockpit Professional Display">
+          <div class="hotspot-dot"></div>
+          <div class="hotspot-tip">Live Cockpit Pro</div>
+        </div>
+        <div class="hotspot" style="top:52%;left:65%;" data-tip="iDrive 7 Touchscreen with M-specific menus">
+          <div class="hotspot-dot"></div>
+          <div class="hotspot-tip">iDrive 7</div>
+        </div>
+        <div class="hotspot" style="top:60%;left:42%;" data-tip="M Sport Automatic Gear Selector with Paddle Shifters">
+          <div class="hotspot-dot"></div>
+          <div class="hotspot-tip">M Gear Selector</div>
+        </div>
+        <div class="ambient-glow" id="ambientGlow"></div>
+      </div>
+
+      <div class="interior-features">
+        <div class="int-feature reveal" data-delay="0">
+          <span class="int-num">01</span>
+          <div>
+            <h4>M Sport Seats</h4>
+            <p>Merino leather sport seats with integrated headrests and M-specific stitching hold you firmly in place.</p>
+          </div>
+        </div>
+        <div class="int-feature reveal" data-delay="150">
+          <span class="int-num">02</span>
+          <div>
+            <h4>Ambient Lighting</h4>
+            <p>40-colour ambient lighting system creates the perfect atmosphere for any drive.</p>
+          </div>
+        </div>
+        <div class="int-feature reveal" data-delay="300">
+          <span class="int-num">03</span>
+          <div>
+            <h4>Harman Kardon Audio</h4>
+            <p>16-speaker 464W surround sound system delivers concert-hall acoustics at speed.</p>
+          </div>
+        </div>
+        <div class="int-feature reveal" data-delay="450">
+          <span class="int-num">04</span>
+          <div>
+            <h4>M Drive Memory</h4>
+            <p>Two M Buttons on the steering wheel store your preferred setup for instant recall.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ TIMELINE ═══════════════════ -->
+  <section id="timeline" class="section section-dark">
+    <div class="section-header reveal">
+      <span class="section-label">06 — Heritage</span>
+      <h2>M3 / M4<br /><em>Evolution</em></h2>
+    </div>
+
+    <div class="timeline" id="timelineEl">
+      <div class="tl-line"></div>
+      <div class="tl-item reveal" data-delay="0">
+        <div class="tl-node"></div>
+        <div class="tl-content">
+          <span class="tl-year">1986</span>
+          <h4>E30 M3</h4>
+          <p>The icon born from motorsport. 2.3L S14 inline-four, 200 hp.</p>
+        </div>
+      </div>
+      <div class="tl-item reveal right" data-delay="150">
+        <div class="tl-node"></div>
+        <div class="tl-content">
+          <span class="tl-year">2000</span>
+          <h4>E46 M3</h4>
+          <p>The purist's favourite. 3.2L S54 inline-six, 343 hp naturally aspirated.</p>
+        </div>
+      </div>
+      <div class="tl-item reveal" data-delay="300">
+        <div class="tl-node"></div>
+        <div class="tl-content">
+          <span class="tl-year">2007</span>
+          <h4>E92 M3</h4>
+          <p>High-revving 4.0L V8 madness. 414 hp. Road-legal race car.</p>
+        </div>
+      </div>
+      <div class="tl-item reveal right" data-delay="450">
+        <div class="tl-node"></div>
+        <div class="tl-content">
+          <span class="tl-year">2014</span>
+          <h4>F82 M4</h4>
+          <p>Twin-turbo era begins. 3.0L S55, 431 hp. Carbon fibre everywhere.</p>
+        </div>
+      </div>
+      <div class="tl-item reveal active" data-delay="600">
+        <div class="tl-node current"></div>
+        <div class="tl-content current">
+          <span class="tl-year">2021</span>
+          <h4>G82 M4 Competition ★</h4>
+          <p>503 hp, S58 engine, M xDrive AWD. The pinnacle of M performance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ SOUND ═══════════════════ -->
+  <section id="sound" class="section sound-section">
+    <div class="sound-content reveal">
+      <h2>Hear the<br /><em>S58 Engine</em></h2>
+      <p>Experience the aggressive soundtrack of the twin-turbocharged inline-six. Click to start the engine.</p>
+      <button class="sound-btn" id="soundBtn">
+        <div class="sound-ring ring1"></div>
+        <div class="sound-ring ring2"></div>
+        <div class="sound-ring ring3"></div>
+        <div class="sound-icon">▶</div>
+        <span class="sound-label">START ENGINE</span>
+      </button>
+      <div class="rpm-gauge" id="rpmGauge">
+        <div class="rpm-bar" id="rpmBar"></div>
+        <span class="rpm-label" id="rpmLabel">0 RPM</span>
+      </div>
+    </div>
+    <div class="sound-bg-img">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/2021_BMW_M4_Competition_1.jpg/1200px-2021_BMW_M4_Competition_1.jpg"
+        alt="BMW M4 Competition"
+        loading="lazy"
+      />
+    </div>
+  </section>
+
+  <!-- ═══════════════════ CTA ═══════════════════ -->
+  <section id="cta" class="section cta-section">
+    <div class="cta-bg">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/2021_BMW_M4_Competition_Auto_%2867442%29.jpg/1200px-2021_BMW_M4_Competition_Auto_%2867442%29.jpg"
+        alt="BMW M4"
+        loading="lazy"
+      />
+      <div class="cta-overlay"></div>
+    </div>
+    <div class="cta-content reveal">
+      <span class="cta-eyebrow">Ready to Drive?</span>
+      <h2>Explore the<br /><em>M4 Competition</em></h2>
+      <p>Step into a world where performance meets perfection.<br />Your M4 awaits.</p>
+      <a href="#showcase" class="btn-primary lg ripple">Configure Your M4</a>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ FOOTER ═══════════════════ -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="bmw-roundel sm">
+          <div class="roundel-inner">
+            <span class="roundel-b">B</span><span class="roundel-m">M</span><span class="roundel-w">W</span>
+          </div>
+        </div>
+        <p>The Ultimate Driving Machine</p>
+      </div>
+      <div class="footer-nav">
+        <div class="footer-col">
+          <h5>Models</h5>
+          <ul>
+            <li><a href="#">M4 Competition</a></li>
+            <li><a href="#">M3 Competition</a></li>
+            <li><a href="#">M2</a></li>
+            <li><a href="#">M8</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Explore</h5>
+          <ul>
+            <li><a href="#">Performance</a></li>
+            <li><a href="#">Heritage</a></li>
+            <li><a href="#">Configurator</a></li>
+            <li><a href="#">Test Drive</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="#">About BMW M</a></li>
+            <li><a href="#">Motorsport</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-social">
+        <h5>Follow M</h5>
+        <div class="social-links">
+          <a href="#" class="social-icon" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="Twitter">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 BMW M GmbH. This is a fan-made tribute site. All trademarks belong to BMW AG.</p>
+      <div class="footer-badges">
+        <span class="badge">M Performance</span>
+        <span class="badge">G82</span>
+        <span class="badge">503hp</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
